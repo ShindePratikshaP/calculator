@@ -6,47 +6,92 @@
     <title>Calculator</title>
     <style>
     .calculator-body{
-        height: 300px;
-        width: 250px;
-        background-color: rgb(32, 32, 32);
+        height: 350px;
+        width: 270px;
+        background-color: black;
         margin: 20px auto;
         padding: 20px;
         border-radius: 10px;
+        padding-top: 40px;
     }
     .calculator-screen{
+        background-color: grey;
+        width: 220px;
+        display: block;
+        margin: 0px auto;
+        font-size: 25px;
+        text-align: right;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        color: white;
+        height: 40px;
+        
+
+    }
+    .calculator-btn-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 250px;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+    .btn{
+        width: 50px;
+        text-align: center;
+        padding: 2px;
+        font-size: 20px;
+        margin: 3px;
+        border : 0.5px solid rgb(104, 102, 102);
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+    
+    }
+    .btn:hover{
+        box-shadow: 0px 0px 5px 0px rgb(219, 218, 218);
+    }
+    .btn-equals{
+        background-color: rgb(235, 102, 50);
+        color: white;
+        
+    }
+    .btn-operators{
+        background-color: rgb(54, 114, 122);
+        color: white;
 
     }
     </style>
 </head>
 <body>
     <div class="calculator-body">
-        <div class="calculator-screen">
-
-        </div>
+        <input type="text" value="0" class="calculator-screen" />
         <div class="calculator-btn-container">
-            <button class="btn">AC</button>
+            <button class="btn btn-equals">AC</button>
             <button class="btn">7</button>
             <button class="btn">4</button>
             <button class="btn">1</button>
             <button class="btn">0</button>
 
-            <button class="btn">(</button>
+            <button class="btn btn-operators">(</button>
             <button class="btn">8</button>
             <button class="btn">5</button>
             <button class="btn">2</button>
             <button class="btn">.</button>
 
-            <button class="btn">)</button>
+            <button class="btn btn-operators">)</button>
             <button class="btn">9</button>
             <button class="btn">6</button>
             <button class="btn">3</button>
-            <button class="btn">%</button>
+            <button class="btn btn-operators" >%</button>
 
-            <button class="btn">/</button>
-            <button class="btn">X</button>
-            <button class="btn">-</button>
-            <button class="btn">+</button>
-            <button class="btn">=</button>
+            <button class="btn btn-operators">/</button>
+            <button class="btn btn-operators">X</button>
+            <button class="btn btn-operators">-</button>
+            <button class="btn btn-operators">+</button>
+            <button class="btn btn-equals">=</button>
 
         </div>
     </div>
